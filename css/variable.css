@@ -1,0 +1,17 @@
+:root{
+    /* color */
+    --primry-red-color:red;
+    --primry-green-color:#155b13;
+    --primry-blue-color:blue;
+    --primry-yellow-color:yellow;
+    --primry-gray-color:gray;
+    --primry-lightgray-color:rgb(167, 167, 167);
+    --primry-pink-color:pink;
+    --primry-navy-color:rgb(0, 0, 128);
+    --primry-time-color:rgb(0, 255, 0);
+    --primry-purple-color:rgb(128, 0, 128);
+    --primry-aque-color:rgb(0, 255, 255);
+    --primry-silver-color:rgb(192, 192, 192);
+    --box:300px;
+    --box-height:250px;
+}

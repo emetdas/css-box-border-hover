@@ -1,0 +1,78 @@
+@import "reset.css";
+@import "variable.css";
+body{
+    /* background-color: var(--primry-red-color); */
+}
+.box{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    width: var(--box);
+    height: var(--box-height);
+    background-color: rgb(236, 236, 236);
+    margin-top: 30%;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.box h2{
+    font-size: 1.8rem ;
+    font-weight: 400;
+}
+.box i{
+    margin-top: 1.5rem;
+    color: rgb(127, 47, 255);
+}
+.box p{
+    padding: 0 1rem;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+.box a{
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .3rem 2rem;
+    background-color: rgb(47, 102, 255);
+    color: #fff;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.box:hover::after{
+    width: 100%;
+height: 100%;
+    border-left: 4px solid #FF5733;
+    border-bottom: 4px solid #FF5733;
+}
+.box:hover::before{
+    border-top: 4px solid #FF5733;
+border-right: 4px solid #FF5733;
+width: 100%;
+height: 100%;
+}
+.box::after{
+    z-index: -1; left: 0; bottom: 0; content: ''; width: 0; height: 0; position: absolute; border-left: 4px solid transparent; border-bottom: 4px solid transparent; transition: all .8s ease; -webkit-transition: all .8s ease; -moz-transition: all .8s ease; -ms-transition: all .8s ease; -o-transition: all .8s ease;
+}
+.box::before{
+    z-index: -1;
+    top: 0;
+    right: 0;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+}
